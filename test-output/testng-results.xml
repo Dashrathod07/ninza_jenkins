@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-16T11:58:07 IST" name="Suite" finished-at="2025-04-16T11:58:12 IST" duration-ms="4665">
+    <groups>
+    </groups>
+    <test started-at="2025-04-16T11:58:07 IST" name="Test" finished-at="2025-04-16T11:58:12 IST" duration-ms="4665">
+      <class name="com.ninja_hrm_employeeTest.EmployeeTest">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.ninja_hrm_employeeTest.EmployeeTest@33c911a1]" started-at="2025-04-16T11:58:06 IST" name="configBS" finished-at="2025-04-16T11:58:07 IST" duration-ms="1396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method signature="addEmployeeWithoutMail()[pri:0, instance:com.ninja_hrm_employeeTest.EmployeeTest@33c911a1]" started-at="2025-04-16T11:58:07 IST" name="addEmployeeWithoutMail" finished-at="2025-04-16T11:58:09 IST" duration-ms="1879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeWithoutMail -->
+        <test-method signature="addEmpolyee()[pri:0, instance:com.ninja_hrm_employeeTest.EmployeeTest@33c911a1]" started-at="2025-04-16T11:58:09 IST" name="addEmpolyee" finished-at="2025-04-16T11:58:11 IST" duration-ms="1619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmpolyee -->
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.ninja_hrm_employeeTest.EmployeeTest@33c911a1]" started-at="2025-04-16T11:58:12 IST" name="configAS" finished-at="2025-04-16T11:58:12 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAS -->
+      </class> <!-- com.ninja_hrm_employeeTest.EmployeeTest -->
+      <class name="com.ninja.hrm.projectTest.ProjectTest">
+        <test-method signature="addSingleProjectWithCreated()[pri:0, instance:com.ninja.hrm.projectTest.ProjectTest@385e9564]" started-at="2025-04-16T11:58:11 IST" name="addSingleProjectWithCreated" finished-at="2025-04-16T11:58:12 IST" duration-ms="1046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addSingleProjectWithCreated -->
+        <test-method signature="craeteDuplicateProjectTest()[pri:0, instance:com.ninja.hrm.projectTest.ProjectTest@385e9564]" started-at="2025-04-16T11:58:12 IST" name="craeteDuplicateProjectTest" finished-at="2025-04-16T11:58:12 IST" depends-on-methods="com.ninja.hrm.projectTest.ProjectTest.addSingleProjectWithCreated" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- craeteDuplicateProjectTest -->
+      </class> <!-- com.ninja.hrm.projectTest.ProjectTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
