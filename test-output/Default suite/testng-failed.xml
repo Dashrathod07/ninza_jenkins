@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ninja_hrm_employeeTest.EmployeeTest">
+      <class name="NinzaTask.taskTest">
         <methods>
-          <include name="addEmpolyee"/>
+          <include name="configAS"/>
+          <include name="thirdCaseTest"/>
+          <include name="configBS"/>
         </methods>
-      </class> <!-- com.ninja_hrm_employeeTest.EmployeeTest -->
+      </class> <!-- NinzaTask.taskTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

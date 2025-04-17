@@ -5,15 +5,11 @@ import org.hamcrest.Matchers;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.ninja.hrm.JavaUtility.JavaUtility;
 import com.ninja.hrm.PojoClassUtility.EmployeePojo;
 import com.ninja.hrm.PojoClassUtility.ProjectPojoClass;
-import com.ninza.hrm.DatabaseUtility.DataBaseUtility;
-import com.ninza.hrm.FileUtility.PropertyFileUtility;
 import com.ninza.hrm.baseClassUtility.BaseAPIClass;
 import com.ninza.hrm.endpoints.IEndpoints;
 
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 public class EmployeeTest extends BaseAPIClass {

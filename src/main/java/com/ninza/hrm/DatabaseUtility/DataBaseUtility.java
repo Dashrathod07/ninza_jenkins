@@ -54,15 +54,37 @@ public class DataBaseUtility {
 		return (ResultSet) result;
 	}
 
-	public int executeNonSelectQuery(String query) {
-		int result = 0;
-		try {
+	public int executeNonSelectQuery(String query) throws Exception {
+		/*int result = 0;
+		System.out.println("Executing SQL: " + query);
 			Statement stat = conn.createStatement();
 			result = stat.executeUpdate(query);
-		} catch (Exception e) {
+		
+		if(result==0) {
+			System.out.println("The Resource is not Created in DataBase");
+			return result;
 		}
-		return result;
+		else {
+			System.out.println("The Resource is Created in DataBase");
+			return result;
+		}*/
+		int result;
+
+	    System.out.println("Executing SQL: " + query);
+
+	    try (Statement stat = conn.createStatement()) {
+	        result = stat.executeUpdate(query);
+	    }
+
+	    if (result == 0) {
+	        System.out.println("The Resource is not Created in DataBase");
+	    } else {
+	        System.out.println("The Resource is Created in DataBase");
+	    }
+
+	    return result;
 	}
+		
 
 	public boolean executeQueryVerifyAndGetData(String query, int columnName, String expectedData)
 			throws Exception {
